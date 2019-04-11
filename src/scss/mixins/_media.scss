@@ -1,0 +1,5 @@
+@mixin mq-sm-up {
+  @media (min-width: 576px) {
+    @content;
+  }
+}

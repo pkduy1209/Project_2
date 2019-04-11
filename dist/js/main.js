@@ -33,15 +33,45 @@ const  HomePage = (function(){
             slidesPerView: 2
         },
         565: {
-            slidesPerView: 1
+            slidesPerView: 1,
         }
     },
     })
+  };
+
+  const initDealSlide = function(){
+    const $dealSlide = $('#deal-block')
+    if (!$dealSlide){
+      return;
+    }
+
+    var mySwiper =new Swiper ($dealSlide,{
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: 'true',
+      breakpoints: { 
+        1200: {
+            slidesPerView: 3
+        },
+        991: {
+            slidesPerView: 2
+        },
+        565: {
+            slidesPerView: 1,
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+    })
+
   };
 return {
   init(){
     initHeroImage();
     initGuideSlide();
+    initDealSlide();
   }
 }
 })();

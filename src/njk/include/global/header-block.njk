@@ -7,14 +7,19 @@
           <img src="https://d19m59y37dris4.cloudfront.net/directory/1-1/img/logo.svg" alt="Directory logo">
         </a>
 
-        <form action="#" id="search" class="form-inline d-none d-sm-flex" >
-          <div class="input-label-absolute input-label-absolute-left input-reset input-expand ml-lg-2 ml-xl-3"> 
-            <label for="search_search" class="label-absolute">
-            </label>
-            <input id="search_search" placeholder="Search" aria-label="Search" class="form-control form-control-sm bg-light border-0 border-right-0" >
-            <button type="reset" class="btn btn-reset btn-sm bg-light border-0">
-              <i class="fa-times fas"></i>
-            </button>
+        <!-- <form>
+          <div class="search-form d-sm-flex">
+            <i class="fas fa-search"></i>
+            <input class="search-input" type="search" placeholder="Search">
+            <button type="button" class="btn-search"><i class="fas fa-times"></i></button>
+          </div>
+        </form> -->
+
+        <form action="#" id="search" class="form-inline d-none d-sm-flex">
+          <div class="input-label-absolute input-label-absolute-left input-reset input-expand ml-lg-2 ml-xl-3 search-form"> 
+            <i class="fa fa-search"></i>
+            <input  placeholder="Search" class="form-control form-control-sm border-0 shadow-0 search-input">
+            <button type="reset" class="btn btn-reset btn-sm btn-search my-0 p-1"><i class="fa-times fas"></i></button>
           </div>
         </form>
       </div>
@@ -22,9 +27,16 @@
       <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right ml-auto">
         <i class="fa fa-bars"></i>
       </button>
+      <!--NavBar-Collapse-->
+      <div id="navbarCollapse" class="navbar-collapse collapse">
+        <form action="#" id="searchcollapsed" class="form-inline mt-4 mb-2 d-sm-none">
+          <div class="input-label-absolute input-label-absolute-left input-reset w-100 d-flex search-form align-items-center">
+            <i class="fa fa-search"></i>
+            <input id="searchcollapsed_search" placeholder="Search" aria-label="Search" class="form-control form-control-sm search-input">
+          </div>
+        </form>
 
-      <div id="navbarCollapse" class="navbar-collapse collapse" style="">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="font-weight:600">
 
           <li class="nav-item dropdown show">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,11 +48,11 @@
             </div>
           </li><!--Home-->
 
-          <li class="nav-item dropdown position-static show">
+          <li class="nav-item dropdown position-static" >
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Template
             </a>
-            <div class="dropdown-menu megamenu py-lg-0">
+            <div class="dropdown-menu megamenu py-lg-0 m-0 border-0 shadow-lg" style="right:0">
               <div class="row">
                 <div class="col-lg-9">
                   
@@ -172,7 +184,7 @@
                 </div><!--col-lg-9-->
 
                 <div class="col-lg-3 d-none d-lg-block">
-                  <img src="https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/photo-1521170665346-3f21e2291d8b.jpg" alt="" class="bg-image">
+                  <img src="https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/photo-1521170665346-3f21e2291d8b.jpg" alt="" class="img-fluid" style="width:100%">
                 </div><!--col-lg-3-->
               </div>
 

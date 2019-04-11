@@ -10603,6 +10603,20 @@ SVG Icons - svgicons.sparkk.fr
   stroke: #4691f6;
   stroke-width: 1; }
 
+.search-form {
+  background: #e9ecef;
+  padding: 3px 10px;
+  border-radius: 5px; }
+  .search-form .search-input {
+    background: #e9ecef;
+    border: none; }
+    .search-form .search-input:focus + .btn-search {
+      display: inline-block; }
+  .search-form .btn-search {
+    display: none;
+    background: #e9ecef;
+    border: none; }
+
 .swiper-slide {
   position: relative; }
   .swiper-slide.img-1 {
@@ -10659,29 +10673,110 @@ SVG Icons - svgicons.sparkk.fr
   line-height: 4rem; }
 
 .our-guide-block .swiper-slide {
-  text-decoration: none; }
-  .our-guide-block .swiper-slide.guide-1 {
-    background: url("../images/new-york.jpg") center/cover no-repeat;
-    height: 350px;
-    width: 200px;
-    border-radius: 10px; }
-  .our-guide-block .swiper-slide.guide-2 {
-    background: url("../images/paris.jpg") center/cover no-repeat;
-    height: 350px;
-    width: 200px;
-    border-radius: 10px; }
-  .our-guide-block .swiper-slide.guide-3 {
-    background: url("../images/prague.jpg") center/cover no-repeat;
-    height: 350px;
-    width: 200px;
-    border-radius: 10px; }
-  .our-guide-block .swiper-slide.guide-4 {
-    background: url("../images/barcelona.jpg") center/cover no-repeat;
-    height: 350px;
-    width: 200px;
-    border-radius: 10px; }
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  height: 350px;
+  width: 250px; }
+  .our-guide-block .swiper-slide .img-city {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 20px; }
 
 .card-body {
+  text-align: start;
+  position: absolute;
+  top: 10;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #fff;
   font-weight: 600;
-  font-size: 16px; }
+  font-size: 16px;
+  text-shadow: 0 0 2px black; }
+
+.deal-block .text-sm {
+  font-size: .875rem; }
+
+.deal-block .text-muted {
+  color: #868e96 !important;
+  text-shadow: none; }
+
+.deal-block .card-stars {
+  min-width: 65px;
+  margin-top: 2px;
+  text-shadow: none; }
+
+.deal-block .text-xs {
+  font-size: .7rem; }
+
+.deal-block .card-title {
+  text-shadow: none;
+  font-weight: 800; }
+
+.deal-block .card-img-top {
+  position: relative; }
+  .deal-block .card-img-top .card-img-overlay-bottom {
+    position: absolute;
+    right: 1.25rem;
+    bottom: .75rem;
+    left: 1.25rem; }
+  .deal-block .card-img-top .avatar {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 2px #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+    line-height: 3rem; }
+  .deal-block .card-img-top .card-img-overlay-top {
+    position: absolute;
+    top: .75rem;
+    right: 1.25rem;
+    left: 1.25rem; }
+    .deal-block .card-img-top .card-img-overlay-top .card-fav-icon {
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center;
+      opacity: 0.5;
+      color: #fff;
+      border-radius: 50%;
+      background: #343a40;
+      line-height: 2.5rem; }
+
+.deal-block .card-body {
+  position: relative; }
+  .deal-block .card-body .card-fav-icon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    opacity: 0.5;
+    color: #fff;
+    border-radius: 50%;
+    background: #343a40;
+    line-height: 2.5rem; }
+
+.bg-block {
+  background-image: url("../images/bg-image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%; }
+
+.container {
+  padding: 100px 0; }
+
+.btn {
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.btn-light {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa; }

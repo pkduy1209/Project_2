@@ -18,14 +18,19 @@
           <img src="https://d19m59y37dris4.cloudfront.net/directory/1-1/img/logo.svg" alt="Directory logo">
         </a>
 
-        <form action="#" id="search" class="form-inline d-none d-sm-flex" >
-          <div class="input-label-absolute input-label-absolute-left input-reset input-expand ml-lg-2 ml-xl-3"> 
-            <label for="search_search" class="label-absolute">
-            </label>
-            <input id="search_search" placeholder="Search" aria-label="Search" class="form-control form-control-sm bg-light border-0 border-right-0" >
-            <button type="reset" class="btn btn-reset btn-sm bg-light border-0">
-              <i class="fa-times fas"></i>
-            </button>
+        <!-- <form>
+          <div class="search-form d-sm-flex">
+            <i class="fas fa-search"></i>
+            <input class="search-input" type="search" placeholder="Search">
+            <button type="button" class="btn-search"><i class="fas fa-times"></i></button>
+          </div>
+        </form> -->
+
+        <form action="#" id="search" class="form-inline d-none d-sm-flex">
+          <div class="input-label-absolute input-label-absolute-left input-reset input-expand ml-lg-2 ml-xl-3 search-form"> 
+            <i class="fa fa-search"></i>
+            <input  placeholder="Search" class="form-control form-control-sm border-0 shadow-0 search-input">
+            <button type="reset" class="btn btn-reset btn-sm btn-search my-0 p-1"><i class="fa-times fas"></i></button>
           </div>
         </form>
       </div>
@@ -33,9 +38,16 @@
       <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right ml-auto">
         <i class="fa fa-bars"></i>
       </button>
+      <!--NavBar-Collapse-->
+      <div id="navbarCollapse" class="navbar-collapse collapse">
+        <form action="#" id="searchcollapsed" class="form-inline mt-4 mb-2 d-sm-none">
+          <div class="input-label-absolute input-label-absolute-left input-reset w-100 d-flex search-form align-items-center">
+            <i class="fa fa-search"></i>
+            <input id="searchcollapsed_search" placeholder="Search" aria-label="Search" class="form-control form-control-sm search-input">
+          </div>
+        </form>
 
-      <div id="navbarCollapse" class="navbar-collapse collapse" style="">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="font-weight:600">
 
           <li class="nav-item dropdown show">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,11 +59,11 @@
             </div>
           </li><!--Home-->
 
-          <li class="nav-item dropdown position-static show">
+          <li class="nav-item dropdown position-static" >
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Template
             </a>
-            <div class="dropdown-menu megamenu py-lg-0">
+            <div class="dropdown-menu megamenu py-lg-0 m-0 border-0 shadow-lg" style="right:0">
               <div class="row">
                 <div class="col-lg-9">
                   
@@ -183,7 +195,7 @@
                 </div><!--col-lg-9-->
 
                 <div class="col-lg-3 d-none d-lg-block">
-                  <img src="https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/photo-1521170665346-3f21e2291d8b.jpg" alt="" class="bg-image">
+                  <img src="https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/photo-1521170665346-3f21e2291d8b.jpg" alt="" class="img-fluid" style="width:100%">
                 </div><!--col-lg-3-->
               </div>
 
@@ -312,24 +324,28 @@
       <div class="swiper-container" id="guidesSilder">
         <div class="swiper-wrapper">
           <a href="#" class="swiper-slide guide-1">
+            <img  class="img-city" src="../images/new-york.jpg">
             <div class="card-body overlay-content">
               <h6 class="card-title text-shadow text-uppercase">New York</h6>
               <p class="card-text text-sm">The big apple</p>
             </div>
           </a>
-          <a href="#" class="swiper-slide guide-2">
+          <a href="#" class="swiper-slide guide-2 ">
+            <img  class="img-city" src="../images/paris.jpg">
             <div class="card-body overlay-content">
               <h6 class="card-title text-shadow text-uppercase">Paris</h6>
               <p class="card-text text-sm">Artist capital of Europe</p>
             </div>
           </a>
-          <a href="#" class="swiper-slide guide-3">
+          <a href="#" class="swiper-slide guide-3 ">
+            <img  class="img-city" src="../images/prague.jpg">
             <div class="card-body overlay-content">
               <h6 class="card-title text-shadow text-uppercase">Prague</h6>
               <p class="card-text text-sm">City of hundred towers</p>
             </div>
           </a>
           <a href="#" class="swiper-slide guide-4">
+            <img  class="img-city" src="../images/barcelona.jpg">
             <div class="card-body overlay-content">
               <h6 class="card-title text-shadow text-uppercase">Barcelona</h6>
               <p class="card-text text-sm">Dalí, Gaudí, Barrio Gotico</p>
@@ -342,6 +358,307 @@
   </div><!--container-->
 
 </section>
+
+<section class="py-5 deal-block">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <p class="subtitle text-secondary">Hurry up, these are expiring soon.</p>
+        <h2>Last minute deals</h2>
+      </div>
+      <div class="col-md-4 d-lg-flex align-items-center justify-content-end">
+        <a href="#" class="text-muted text-sm">      
+          See all deals<i class="fas fa-angle-double-right ml-2"></i>
+        </a>
+      </div>
+    </div><!--title-block-->
+
+    <div class="swiper-container" id="deal-block">
+      <div class="swiper-wrapper pb-5">
+        <div class="swiper-slide h-auto px-2">
+          <div class="w-100 h-100 card-content">
+            <div class="card h-100 border-0 shadow">
+
+              <div class="card-img-top overflow-hidden gradient-overlay">
+                <img src="../images/card-deal/card-1.jpg"  class="img-fluid">
+                <a href="#" class="tile-link"></a>
+                
+                <div class="card-img-overlay-bottom z-index-20">
+                  <div class="media text-white text-sm align-items-center">
+                    <img src="../images/avatar/avt-1.jpg" class="avatar avatar-border-white mr-2">
+                    <div class="media-body">Julie</div>
+                  </div>
+                </div><!--card-img-overlay-bottom-->
+                <div class="card-img-overlay-top text-right">
+                  <a href="#" class="card-fav-icon position-relative z-index-40">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div><!--card-img-top-->
+
+              <div class="card-body d-flex align-items-center shadow-none">
+                <div class="w-100">
+                  <h6 class="card-title"><a href="#" class="text-decoration-none text-dark">Modern Apt - Vibrant Neighborhood!</a></h6>
+                  <div class="d-flex card-subtitle mb-3">
+                    <p class="flex-grow-1 mb-0 text-muted text-sm">Entire apartment</p>
+                    <p class="flex-shrink-1 mb-0 card-stars text-xs text-right">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-dark"></i>
+                      <i class="fa fa-star text-dark"></i>
+                    </p>
+                  </div>
+                  <p class="card-text text-muted"><span class="h4 text-primary">$75</span> per night</p>
+                </div>
+              </div><!--card-body-->
+
+            </div>
+
+          </div><!--card-content-->
+        </div><!--card-1-->
+
+        <div class="swiper-slide h-auto px-2">
+          <div class="w-100 h-100 card-content">
+            <div class="card h-100 border-0 shadow">
+
+              <div class="card-img-top overflow-hidden gradient-overlay">
+                <img src="../images/card-deal/card-2.jpg"  class="img-fluid">
+                <a href="#" class="tile-link"></a>
+                
+                <div class="card-img-overlay-bottom z-index-20">
+                  <div class="media text-white text-sm align-items-center">
+                    <img src="../images/avatar/avt-2.jpg" class="avatar avatar-border-white mr-2">
+                    <div class="media-body">Barbora</div>
+                  </div>
+                </div><!--card-img-overlay-bottom-->
+                <div class="card-img-overlay-top text-right">
+                  <a href="#" class="card-fav-icon position-relative z-index-40">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div><!--card-img-top-->
+
+              <div class="card-body d-flex align-items-center shadow-none">
+                <div class="w-100">
+                  <h6 class="card-title"><a href="#" class="text-decoration-none text-dark">Sunny Private Studio-Apartment</a></h6>
+                  <div class="d-flex card-subtitle mb-3">
+                    <p class="flex-grow-1 mb-0 text-muted text-sm">Shared room</p>
+                    <p class="flex-shrink-1 mb-0 card-stars text-xs text-right">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-dark"></i>
+                    </p>
+                  </div>
+                  <p class="card-text text-muted"><span class="h4 text-primary">$93</span> per night</p>
+                </div>
+              </div><!--card-body-->
+            </div>
+          </div><!--card-content-->
+        </div><!--card-2-->
+
+        <div class="swiper-slide h-auto px-2">
+          <div class="w-100 h-100 card-content">
+            <div class="card h-100 border-0 shadow">
+
+              <div class="card-img-top overflow-hidden gradient-overlay">
+                <img src="../images/card-deal/card-3.jpg"  class="img-fluid">
+                <a href="#" class="tile-link"></a>
+                
+                <div class="card-img-overlay-bottom z-index-20">
+                  <div class="media text-white text-sm align-items-center">
+                    <img src="../images/avatar/avt-3.jpg" class="avatar avatar-border-white mr-2">
+                    <div class="media-body">Jack</div>
+                  </div>
+                </div><!--card-img-overlay-bottom-->
+
+                <div class="card-img-overlay-top text-right">
+                  <a href="#" class="card-fav-icon position-relative z-index-40">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div><!--card-img-top-->
+
+              <div class="card-body d-flex align-items-center shadow-none">
+                <div class="w-100">
+                  <h6 class="card-title"><a href="#" class="text-decoration-none text-dark">Mid-Century Modern Garden Paradise</a></h6>
+                  <div class="d-flex card-subtitle mb-3">
+                    <p class="flex-grow-1 mb-0 text-muted text-sm">Entire house</p>
+                    <p class="flex-shrink-1 mb-0 card-stars text-xs text-right">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-dark"></i>
+                      <i class="fa fa-star text-dark"></i>
+                    </p>
+                  </div>
+                  <p class="card-text text-muted"><span class="h4 text-primary">$115</span> per night</p>
+                </div>
+              </div><!--card-body-->
+
+            </div>
+  
+          </div><!--card-content-->
+        </div><!--card-3-->
+
+        <div class="swiper-slide h-auto px-2">
+          <div class="w-100 h-100 card-content">
+            <div class="card h-100 border-0 shadow">
+
+              <div class="card-img-top overflow-hidden gradient-overlay">
+                <img src="../images/card-deal/card-4.jpg"  class="img-fluid">
+                <a href="#" class="tile-link"></a>
+                
+                <div class="card-img-overlay-bottom z-index-20">
+                  <div class="media text-white text-sm align-items-center">
+                    <img src="../images/avatar/avt-4.jpg" class="avatar avatar-border-white mr-2">
+                    <div class="media-body">Stuart</div>
+                  </div>
+                </div><!--card-img-overlay-bottom-->
+                <div class="card-img-overlay-top text-right">
+                  <a href="#" class="card-fav-icon position-relative z-index-40">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div><!--card-img-top-->
+
+              <div class="card-body d-flex align-items-center shadow-none">
+                <div class="w-100">
+                  <h6 class="card-title"><a href="#" class="text-decoration-none text-dark">Brooklyn Life, Easy to Manhattan</a></h6>
+                  <div class="d-flex card-subtitle mb-3">
+                    <p class="flex-grow-1 mb-0 text-muted text-sm">Private room</p>
+                    <p class="flex-shrink-1 mb-0 card-stars text-xs text-right">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-dark"></i>
+                    </p>
+                  </div>
+                  <p class="card-text text-muted"><span class="h4 text-primary">$123</span> per night</p>
+                </div>
+              </div><!--card-body-->
+
+            </div>
+  
+          </div><!--card-content-->
+        </div><!--card-4-->
+
+        <div class="swiper-slide h-auto px-2">
+          <div class="w-100 h-100 card-content">
+          <div class="card h-100 border-0 shadow">
+
+            <div class="card-img-top overflow-hidden gradient-overlay">
+              <img src="../images/card-deal/card-5.jpg"  class="img-fluid">
+              <a href="#" class="tile-link"></a>
+              
+              <div class="card-img-overlay-bottom z-index-20">
+                <div class="media text-white text-sm align-items-center">
+                  <img src="../images/avatar/avt-5.jpg" class="avatar avatar-border-white mr-2">
+                  <div class="media-body">Pamela</div>
+                </div>
+              </div><!--card-img-overlay-bottom-->
+              <div class="card-img-overlay-top text-right">
+                <a href="#" class="card-fav-icon position-relative z-index-40">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+                  </svg>
+                </a>
+              </div>
+            </div><!--card-img-top-->
+
+            <div class="card-body d-flex align-items-center shadow-none">
+              <div class="w-100">
+                <h6 class="card-title"><a href="#" class="text-decoration-none text-dark">Modern, Well-Appointed Room</a></h6>
+                <div class="d-flex card-subtitle mb-3">
+                  <p class="flex-grow-1 mb-0 text-muted text-sm">Private room</p>
+                  <p class="flex-shrink-1 mb-0 card-stars text-xs text-right">
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                  </p>
+                </div>
+                <p class="card-text text-muted"><span class="h4 text-primary">$80</span> per night</p>
+              </div>
+            </div><!--card-body-->
+
+          </div>
+
+          </div><!--card-content-->
+        </div><!--card-5-->
+
+        <div class="swiper-slide h-auto px-2">
+          <div class="w-100 h-100 card-content">
+            <div class="card h-100 border-0 shadow">
+
+              <div class="card-img-top overflow-hidden gradient-overlay">
+                <img src="../images/card-deal/card-6.jpg"  class="img-fluid">
+                <a href="#" class="tile-link"></a>
+                
+                <div class="card-img-overlay-bottom z-index-20">
+                  <div class="media text-white text-sm align-items-center">
+                    <img src="../images/avatar/avt-6.jpg" class="avatar avatar-border-white mr-2">
+                    <div class="media-body">John</div>
+                  </div>
+                </div><!--card-img-overlay-bottom-->
+                <div class="card-img-overlay-top text-right">
+                  <a href="#" class="card-fav-icon position-relative z-index-40">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div><!--card-img-top-->
+
+              <div class="card-body d-flex align-items-center shadow-none">
+                <div class="w-100">
+                  <h6 class="card-title"><a href="#" class="text-decoration-none text-dark">Cute Quirky Garden apt, NYC adjacent</a></h6>
+                  <div class="d-flex card-subtitle mb-3">
+                    <p class="flex-grow-1 mb-0 text-muted text-sm">Entire apartment</p>
+                    <p class="flex-shrink-1 mb-0 card-stars text-xs text-right">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-dark"></i>
+                      <i class="fa fa-star text-dark"></i>
+                    </p>
+                  </div>
+                  <p class="card-text text-muted"><span class="h4 text-primary">$121</span> per night</p>
+                </div>
+              </div><!--card-body-->
+
+            </div>
+          </div><!--card-content-->
+        </div><!--card-6-->
+        
+      </div><!--swiper-wrapper-->
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div><!--swiper-container-->
+  </div><!--container-->
+
+</section>
+
+<div class="bg-block">
+  <div class="container">
+    <div class="block-title d-inline-flex flex-column align-items-start">
+      <h3 class="display-3 font-weight-bold text-serif text-shadow mb-5 text-white">Ready for your next holidays?</h3>
+      <a href="#" class="btn btn-light">Get started</a>
+    </div>
+  </div>
+</div>
 
 <footer class="position-relative z-index-10">
 

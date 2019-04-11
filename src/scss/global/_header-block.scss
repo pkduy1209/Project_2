@@ -1,0 +1,20 @@
+.search-form {
+  background: #e9ecef;
+  padding: 3px 10px;
+  border-radius: 5px;
+
+  .search-input {
+    background: #e9ecef;
+    border: none;
+    
+    &:focus + .btn-search{
+      display: inline-block;
+      
+    }
+  }
+  .btn-search {
+    display: none;
+    background: #e9ecef;
+    border: none;
+  }
+}

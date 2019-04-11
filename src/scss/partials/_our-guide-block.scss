@@ -1,34 +1,27 @@
 .our-guide-block {
   .swiper-slide {
     text-decoration: none;
-    &.guide-1 {
-      background: url('../images/new-york.jpg') center/cover no-repeat;
-      height: 350px;
-      width: 200px;
-      border-radius: 10px; 
-    }
-    &.guide-2 {
-      background: url('../images/paris.jpg') center/cover no-repeat; 
-      height: 350px;
-      width: 200px;
-      border-radius: 10px;
-    }
-    &.guide-3 {
-      background: url('../images/prague.jpg') center/cover no-repeat;
-      height: 350px;
-      width: 200px;
-      border-radius: 10px;
-    }
-    &.guide-4 { 
-      background: url('../images/barcelona.jpg') center/cover no-repeat;  
-      height: 350px;
-      width: 200px;
-      border-radius: 10px;
+    text-align: center;
+    position: relative;
+    height: 350px;
+    width: 250px;
+    .img-city{
+      height: 100%;
+      width: 100%;
+      padding: 0 10px;
+      border-radius: 20px;
     }
   } 
 }
 .card-body {
+  text-align: start;
+  position: absolute;
+  top: 10;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #fff;
   font-weight: 600;
   font-size: 16px;
+  text-shadow: 0 0 2px black;
 }

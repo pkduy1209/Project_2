@@ -1,0 +1,23 @@
+
+.bg-block {
+  background-image: url('../images/bg-image.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.container {
+  padding: 100px 0;
+}
+
+.btn {
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn-light {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
