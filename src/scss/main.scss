@@ -6,8 +6,11 @@
 
 @import 'global/header-block';
 
-@import 'partials/hero-home-block';
-@import 'partials/booking-block';
-@import 'partials/our-guide-block';
-@import 'partials/deal-block';
-@import 'partials/background-block';
+@import 'partials/home/hero-home-block';
+@import 'partials/home/booking-block';
+@import 'partials/home/our-guide-block';
+@import 'partials/home/deal-block';
+@import 'partials/home/background-block';
+@import 'partials/home/customers-block';
+@import 'partials/home/stories-block';
+@import 'partials/home/instagram-images-block';

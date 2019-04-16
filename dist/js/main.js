@@ -67,11 +67,57 @@ const  HomePage = (function(){
     })
 
   };
+  const initCustomer =function() {
+    const $customesSlide = $('#customersSwiper')
+    if (!$customesSlide){
+      return;
+    }
+    var mySwiper =new Swiper ($customesSlide,{
+      slidesPerView: 2,
+      spaceBetween: 20,
+      loop: 'true',
+      clickable:'true',
+      breakpoints: { 
+        565: {
+            slidesPerView: 1,
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+    })
+
+  };
+
+  const initInstagramSlider = function () {
+    const $instaSlider = $('#instagram-slider')
+    if (!$instaSlider){
+      return;
+    }
+    var mySwiper =new Swiper ($instaSlider,{
+      slidesPerView: 12,
+      spaceBetween: 0,
+      // breakpoints: { 
+      //   1200: {
+      //       slidesPerView: 10,
+      //   },
+      //   991: {
+      //       slidesPerView: 2,
+      //   },
+      //   565: {
+      //       slidesPerView: 4,
+      //   }
+      // },
+    })
+  };
 return {
   init(){
     initHeroImage();
     initGuideSlide();
     initDealSlide();
+    initCustomer();
+    initInstagramSlider();
   }
 }
 })();

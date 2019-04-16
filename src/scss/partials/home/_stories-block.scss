@@ -1,0 +1,20 @@
+.stories-block {
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.4rem - 1px);
+    border-top-right-radius: calc(.4rem - 1px);
+  }
+  .card-body {
+    position: relative;
+    text-shadow: none;
+  }
+  .text-gray-500 {
+    color: #adb5bd;
+  }
+  .text-sm {
+    font-size: .875rem;
+  }
+  .my-3 {
+    margin: 1rem 0;
+  }
+}

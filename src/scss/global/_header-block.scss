@@ -8,9 +8,8 @@
     border: none;
     
     &:focus + .btn-search{
-      display: inline-block;
-      
-    }
+        display: inline-block;
+      }
   }
   .btn-search {
     display: none;
