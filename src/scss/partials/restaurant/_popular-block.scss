@@ -1,0 +1,37 @@
+
+
+.popular-block {
+  .card-img-overlay-bottom {
+    position: absolute;
+    top: 8rem;
+    left: 1.25rem;
+  }
+  .card-img-overlay-top {
+    position: absolute;
+    top: .75rem;
+    right: 1.25rem;
+    left: 1.25rem;
+  }
+  .badge-transparent {
+    color: #212529;
+    background: rgba(248,249,250,0.9);
+  }
+  .card-fav-icon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    opacity: 0.5;
+    color: #fff;
+    border-radius: 50%;
+    background: rgba(248,249,250,0.9);
+    line-height: 2.5rem;
+  }
+  .text-white {
+    color: #fff;
+  }
+  .card-body {
+    position: relative;
+    text-shadow: none;
+  }
+}

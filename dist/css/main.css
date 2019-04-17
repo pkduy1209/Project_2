@@ -10598,10 +10598,16 @@ SVG Icons - svgicons.sparkk.fr
 .svg-icon polygon,
 .svg-icon rect {
   fill: #4691f6; }
+  .svg-icon path.text-secondary,
+  .svg-icon polygon.text-secondary,
+  .svg-icon rect.text-secondary {
+    fill: #e83e8c; }
 
 .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1; }
+  .svg-icon circle.text-secondary {
+    stroke: #e83e8c; }
 
 .search-form {
   background: #e9ecef;
@@ -10907,3 +10913,98 @@ SVG Icons - svgicons.sparkk.fr
   transition: all 0.2s ease-in-out; }
   .instagram-images-block .hover-scale:hover {
     transform: scale(1.05); }
+
+.bg-cover {
+  background-image: url("../images/bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.btn-social {
+  position: relative;
+  padding-left: 3rem; }
+
+.btn-outline-primary {
+  color: #4E66F8;
+  border-color: #4E66F8; }
+
+.btn-social-icon {
+  position: absolute;
+  left: 1rem;
+  width: 2rem;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.btn-outline-muted {
+  color: #868e96;
+  border-color: #868e96; }
+  .btn-outline-muted:hover {
+    color: #fff;
+    background: #868e96; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #4E66F8;
+  border-color: #4E66F8; }
+
+.btn {
+  padding: 10px; }
+
+.fa-2x {
+  font-size: 1em; }
+
+.py-lg-7 {
+  padding: 8rem 0; }
+
+.our-brands-block .letter-spacing-3 {
+  letter-spacing: .3em; }
+
+.our-brands-block .text-uppercase {
+  text-transform: uppercase; }
+
+.our-brands-block .opacity-7 {
+  opacity: .7; }
+
+.our-brands-block .w-6rem {
+  width: 6rem !important; }
+
+.pb-6 {
+  padding-bottom: 8rem; }
+
+.bg-secondary-light {
+  background: #f8c7dd; }
+
+.text-secondary {
+  color: #e83e8c; }
+
+.popular-block .card-img-overlay-bottom {
+  position: absolute;
+  top: 8rem;
+  left: 1.25rem; }
+
+.popular-block .card-img-overlay-top {
+  position: absolute;
+  top: .75rem;
+  right: 1.25rem;
+  left: 1.25rem; }
+
+.popular-block .badge-transparent {
+  color: #212529;
+  background: rgba(248, 249, 250, 0.9); }
+
+.popular-block .card-fav-icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  opacity: 0.5;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(248, 249, 250, 0.9);
+  line-height: 2.5rem; }
+
+.popular-block .text-white {
+  color: #fff; }
+
+.popular-block .card-body {
+  position: relative;
+  text-shadow: none; }

@@ -11,9 +11,15 @@ SVG Icons - svgicons.sparkk.fr
 .svg-icon polygon,
 .svg-icon rect {
   fill: #4691f6;
+  &.text-secondary {
+    fill: #e83e8c;
+  }
 }
 
 .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1;
+  &.text-secondary {
+    stroke: #e83e8c;
+  }
 }

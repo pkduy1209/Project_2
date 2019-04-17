@@ -1,0 +1,41 @@
+.bg-cover {
+  background-image: url('../images/bg-image.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.btn-social {
+  position: relative;
+  padding-left: 3rem;
+}
+.btn-outline-primary {
+  color: #4E66F8;
+  border-color: #4E66F8;
+}
+.btn-social-icon {
+  position: absolute;
+  left: 1rem;
+  width: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-outline-muted {
+  color: #868e96;
+  border-color: #868e96;
+  &:hover {
+    color: #fff;
+    background: #868e96;
+  }
+}
+.btn-primary {
+  color: #fff;
+  background-color: #4E66F8;
+  border-color: #4E66F8;
+
+}
+.btn {
+  padding: 10px;
+}
+.fa-2x {
+  font-size: 1em;
+}

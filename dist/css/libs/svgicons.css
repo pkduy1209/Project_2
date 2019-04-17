@@ -9,7 +9,13 @@ SVG Icons - svgicons.sparkk.fr
 .svg-icon polygon,
 .svg-icon rect {
   fill: #4691f6; }
+  .svg-icon path.text-secondary,
+  .svg-icon polygon.text-secondary,
+  .svg-icon rect.text-secondary {
+    fill: #e83e8c; }
 
 .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1; }
+  .svg-icon circle.text-secondary {
+    stroke: #e83e8c; }
