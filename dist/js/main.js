@@ -102,7 +102,7 @@ const  HomePage = (function(){
             slidesPerView: 10,
         },
         991: {
-            slidesPerView: 2,
+            slidesPerView: 6,
         },
         565: {
             slidesPerView: 4,
@@ -122,7 +122,7 @@ const  HomePage = (function(){
 
       breakpoints: { 
         1200: {
-            slidesPerView: 6,
+            slidesPerView: 4,
         },
         991: {
             slidesPerView: 4,

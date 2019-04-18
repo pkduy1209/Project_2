@@ -1,8 +1,23 @@
-.bg-cover {
-  background-image: url('../images/bg-image.jpg') ;
-  background-size: cover;
-  background-repeat: no-repeat;
 
+.sign-in-block { 
+  .btn {
+    padding: 10px;
+  }
+  .fa-2x {
+    font-size: 1em;
+  }
+  .svg-icon {
+    color: #4E66F8;
+  }
+}
+.fa-times {
+  font-size: 24px;
+}
+
+.close-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .btn-social {
   position: relative;
@@ -19,6 +34,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.btn-primary {
+  color: #fff;
+  background-color: #4E66F8;
+  border-color: #4E66F8;
+
+}
 .btn-outline-muted {
   color: #868e96;
   border-color: #868e96;
@@ -27,15 +49,9 @@
     background: #868e96;
   }
 }
-.btn-primary {
-  color: #fff;
-  background-color: #4E66F8;
-  border-color: #4E66F8;
+.bg-cover {
+  background-image: url('../images/bg-image.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-}
-.btn {
-  padding: 10px;
-}
-.fa-2x {
-  font-size: 1em;
 }

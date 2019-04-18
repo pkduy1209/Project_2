@@ -10914,10 +10914,22 @@ SVG Icons - svgicons.sparkk.fr
   .instagram-images-block .hover-scale:hover {
     transform: scale(1.05); }
 
-.bg-cover {
-  background-image: url("../images/bg-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+.sign-in-block .btn {
+  padding: 10px; }
+
+.sign-in-block .fa-2x {
+  font-size: 1em; }
+
+.sign-in-block .svg-icon {
+  color: #4E66F8; }
+
+.fa-times {
+  font-size: 24px; }
+
+.close-absolute {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .btn-social {
   position: relative;
@@ -10934,6 +10946,11 @@ SVG Icons - svgicons.sparkk.fr
   top: 50%;
   transform: translateY(-50%); }
 
+.btn-primary {
+  color: #fff;
+  background-color: #4E66F8;
+  border-color: #4E66F8; }
+
 .btn-outline-muted {
   color: #868e96;
   border-color: #868e96; }
@@ -10941,16 +10958,10 @@ SVG Icons - svgicons.sparkk.fr
     color: #fff;
     background: #868e96; }
 
-.btn-primary {
-  color: #fff;
-  background-color: #4E66F8;
-  border-color: #4E66F8; }
-
-.btn {
-  padding: 10px; }
-
-.fa-2x {
-  font-size: 1em; }
+.bg-cover {
+  background-image: url("../images/bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .py-lg-7 {
   padding: 8rem 0; }
@@ -11008,3 +11019,6 @@ SVG Icons - svgicons.sparkk.fr
 .popular-block .card-body {
   position: relative;
   text-shadow: none; }
+
+.popular-block .text-gray-300 {
+  color: #dee2e6; }

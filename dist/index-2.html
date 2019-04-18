@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"></head>
-<body>
+<body style="padding-top: 59px">
 
 <header class="header">
   <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
@@ -203,7 +203,7 @@
           </li><!--Template-->
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li><!--Contact-->
 
           <li class="nav-item dropdown show">
@@ -212,7 +212,7 @@
             </a>
             <div aria-labelledby="homeDropdownMenuLink" class="dropdown-menu">
                 <h6 class="dropdown-header font-weight-normal">Documentation</h6>
-                <a href="#" class="dropdown-item">Introduction</a>
+                <a href="docs.html" class="dropdown-item">Introduction</a>
                 <a href="#" class="dropdown-item">Directory structure</a>
                 <a href="#" class="dropdown-item">Gulp</a>
                 <a href="#" class="dropdown-item">Customizing CSS</a>
@@ -1414,7 +1414,8 @@
     </symbol>
   </svg></div>
 
-<section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(./images/hero-5.jpg);">
+<section class="d-flex align-items-center dark-overlay bg-cover" 
+  style="background-image: url(./images/hero-5.jpg); background-position: center;">
   <div class="container py-6 py-lg-7 text-white overlay-content text-center"> 
     <h1 class="display-3 font-weight-bold text-shadow">Discover Directory</h1>
     <p class="text-lg text-shadow">Uncover the best places to eat, drink, and shop nearest to you.</p>   
@@ -1573,44 +1574,15 @@
   
   <div class="swiper-container py-5 px-lg-5" id="popularSlider">
     <div class="swiper-wrapper">
-      <div class="swiper-slide h-auto px-2">
-        <div class="card h-100 border-0 shadow">
-          <div style="background-image: url(https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
-          <a href="detail.html" class="tile-link"></a>
-            <div class="card-img-overlay-bottom z-index-20">
-              <h4 class="text-white text-shadow">Blue Hill</h4>
-              <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-white"></i>
-              </p>
-            </div>
-            <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
-              <div class="badge badge-transparent badge-pill px-3 py-2">Restaurants</div>
-              <a href="#" class="card-fav-icon position-relative z-index-40"> 
-                <svg class="svg-icon text-white">
-                  <use xlink:href="#heart-1"> </use>
-                </svg></a>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
-            <p class="text-sm text-muted text-uppercase mb-1">By<a href="#" class="text-dark">Matt Damon</a></p>
-            <p class="text-sm mb-0">
-              <a href="#" class="mr-1">Restaurant,</a><a href="#" class="mr-1">Contemporary</a>
-            </p>
-          </div>
-        </div>
-      </div>
 
       <div class="swiper-slide h-auto px-2">
         <div class="card h-100 border-0 shadow">
-          <div style="background-image: url(https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
+          <div style="background-image: url(./images/restaurant/img-1.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
           <a href="detail.html" class="tile-link"></a>
             <div class="card-img-overlay-bottom z-index-20">
               <h4 class="text-white text-shadow">Blue Hill</h4>
-              <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i>
+              <p class="mb-2 text-xs">
+                <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
@@ -1627,9 +1599,10 @@
           </div>
           <div class="card-body">
             <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
-            <p class="text-sm text-muted text-uppercase mb-1">By<a href="#" class="text-dark">Matt Damon</a></p>
-            <p class="text-sm mb-0">
-              <a href="#" class="mr-1">Restaurant,</a><a href="#" class="mr-1">Contemporary</a>
+            <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+            <p class="text-sm mb-0"> 
+              <a href="#" class="mr-1">Restaurant, </a>
+              <a href="#" class="mr-1">Contemporary</a>
             </p>
           </div>
         </div>
@@ -1637,11 +1610,12 @@
 
       <div class="swiper-slide h-auto px-2">
         <div class="card h-100 border-0 shadow">
-          <div style="background-image: url(https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
-          <a href="detail.html" class="tile-link"></a>
+          <div style="background-image: url(./images/restaurant/img-2.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
+          <a href="#" class="tile-link"></a>
             <div class="card-img-overlay-bottom z-index-20">
-              <h4 class="text-white text-shadow">Blue Hill</h4>
-              <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i>
+              <h4 class="text-white text-shadow">Plutorque</h4>
+              <p class="mb-2 text-xs">
+                <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
@@ -1658,9 +1632,44 @@
           </div>
           <div class="card-body">
             <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
-            <p class="text-sm text-muted text-uppercase mb-1">By<a href="#" class="text-dark">Matt Damon</a></p>
+            <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
             <p class="text-sm mb-0">
-              <a href="#" class="mr-1">Restaurant,</a><a href="#" class="mr-1">Contemporary</a>
+              <a href="#" class="mr-1">Restaurant, </a>
+              <a href="#" class="mr-1">Fusion</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide h-auto px-2">
+        <div class="card h-100 border-0 shadow">
+          <div style="background-image: url(./images/restaurant/img-3.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
+          <a href="detail.html" class="tile-link"></a>
+            <div class="card-img-overlay-bottom z-index-20">
+              <h4 class="text-white text-shadow">Junipoor</h4>
+              <p class="mb-2 text-xs">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+              </p>
+            </div>
+            <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+              <div class="badge badge-transparent badge-pill px-3 py-2">Music club</div>
+              <a href="#" class="card-fav-icon position-relative z-index-40"> 
+                <svg class="svg-icon text-white">
+                  <use xlink:href="#heart-1"> </use>
+                </svg></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
+            <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+            <p class="text-sm mb-0">
+              <a href="#" class="mr-1">Music, </a>
+              <a href="#" class="mr-1">Teachno, </a>
+              <a href="#" class="mr-1">House</a>
             </p>
           </div>
         </div>
@@ -1668,19 +1677,20 @@
 
       <div class="swiper-slide  h-auto px-2">
         <div class="card h-100 border-0 shadow">
-          <div style="background-image: url(https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
+          <div style="background-image: url(./images/restaurant/img-4.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
           <a href="detail.html" class="tile-link"></a>
             <div class="card-img-overlay-bottom z-index-20">
-              <h4 class="text-white text-shadow">Blue Hill</h4>
-              <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i>
+              <h4 class="text-white text-shadow">Musix</h4>
+              <p class="mb-2 text-xs">
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-gray-300"></i>
+                <i class="fa fa-star text-gray-300"></i>
               </p>
             </div>
             <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
-              <div class="badge badge-transparent badge-pill px-3 py-2">Restaurants</div>
+              <div class="badge badge-transparent badge-pill px-3 py-2">Music club</div>
               <a href="#" class="card-fav-icon position-relative z-index-40"> 
                 <svg class="svg-icon text-white">
                   <use xlink:href="#heart-1"> </use>
@@ -1689,9 +1699,11 @@
           </div>
           <div class="card-body">
             <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
-            <p class="text-sm text-muted text-uppercase mb-1">By<a href="#" class="text-dark">Matt Damon</a></p>
+            <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
             <p class="text-sm mb-0">
-              <a href="#" class="mr-1">Restaurant,</a><a href="#" class="mr-1">Contemporary</a>
+              <a href="#" class="mr-1">Music, </a>
+              <a href="#" class="mr-1">Club, </a>
+              <a href="#" class="mr-1">Rock</a>
             </p>
           </div>
         </div>
@@ -1699,15 +1711,16 @@
 
       <div class="swiper-slide h-auto px-2">
         <div class="card h-100 border-0 shadow">
-          <div style="background-image: url(https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
+          <div style="background-image: url(./images/restaurant/img-5.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
           <a href="detail.html" class="tile-link"></a>
             <div class="card-img-overlay-bottom z-index-20">
-              <h4 class="text-white text-shadow">Blue Hill</h4>
-              <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i>
+              <h4 class="text-white text-shadow">Prosure</h4>
+              <p class="mb-2 text-xs">
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-gray-300"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
               </p>
             </div>
             <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
@@ -1720,9 +1733,11 @@
           </div>
           <div class="card-body">
             <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
-            <p class="text-sm text-muted text-uppercase mb-1">By<a href="#" class="text-dark">Matt Damon</a></p>
+            <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
             <p class="text-sm mb-0">
-              <a href="#" class="mr-1">Restaurant,</a><a href="#" class="mr-1">Contemporary</a>
+              <a href="#" class="mr-1">Nisi, </a>
+              <a href="#" class="mr-1">Ex, </a>
+              <a href="#" class="mr-1">Eiusmod</a>
             </p>
           </div>
         </div>
@@ -1730,11 +1745,12 @@
 
       <div class="swiper-slide h-auto px-2">
         <div class="card h-100 border-0 shadow">
-          <div style="background-image: url(https://d19m59y37dris4.cloudfront.net/directory/1-1/img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
+          <div style="background-image: url(./images/restaurant/img-6.jpg); min-height: 200px;" class="card-img-top overflow-hidden dark-overlay bg-cover">
           <a href="detail.html" class="tile-link"></a>
-            <div class="card-img-overlay-bottom z-index-20">
-              <h4 class="text-white text-shadow">Blue Hill</h4>
-              <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i>
+            <div class="card-img-overlay-bottom shadow z-index-20">
+              <h4 class="text-white text-shadow">Take That</h4>
+              <p class="mb-2 text-xs">
+                <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
                 <i class="fa fa-star text-warning"></i>
@@ -1742,7 +1758,7 @@
               </p>
             </div>
             <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
-              <div class="badge badge-transparent badge-pill px-3 py-2">Restaurants</div>
+              <div class="badge badge-transparent badge-pill px-3 py-2">Café</div>
               <a href="#" class="card-fav-icon position-relative z-index-40"> 
                 <svg class="svg-icon text-white">
                   <use xlink:href="#heart-1"> </use>
@@ -1751,9 +1767,11 @@
           </div>
           <div class="card-body">
             <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
-            <p class="text-sm text-muted text-uppercase mb-1">By<a href="#" class="text-dark">Matt Damon</a></p>
+            <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
             <p class="text-sm mb-0">
-              <a href="#" class="mr-1">Restaurant,</a><a href="#" class="mr-1">Contemporary</a>
+              <a href="#" class="mr-1">Nisi, </a>
+              <a href="#" class="mr-1">Ex, </a>
+              <a href="#" class="mr-1">Eiusmod</a>
             </p>
           </div>
         </div>
@@ -1894,7 +1912,7 @@
   </div>
 </section>
 
-<footer class="position-relative z-index-10">
+<footer class="position-relative z-index-10 footer-block">
 
   <div class="py-5 bg-gray-200 text-muted">
     <div class="container">
